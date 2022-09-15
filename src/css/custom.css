@@ -1,0 +1,178 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+:root {
+	--ifm-background-color: var(--nord1) !important;
+	--ifm-background-surface-color: var(--nord0) !important;
+	--ifm-code-background: var(--nord0) !important;
+	--ifm-color-emphasis-100: var(--ifm-background-color) !important;
+
+	--ifm-blockquote-color: #c1c1c1;
+	--ifm-footer-background-color: var(--ifm-background-surface-color);
+	--ifm-hr-border-color: var(--nord3);
+	--ifm-table-head-background: var(--nord0);
+	--ifm-color-primary: #34cbfb;
+	--ifm-heading-font-family: "Quicksand", sans-serif;
+	--ifm-font-family-base: "Quicksand", sans-serif;
+}
+
+.hero__title {
+	background: linear-gradient(to left top, rgb(147, 230, 255), #34cbfb);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.hero__subtitle {
+	color: white;
+}
+
+.navbar__link--active {
+	font-weight: bold;
+}
+
+.docusaurus-highlight-code-line {
+	background-color: var(--nord2);
+	display: block;
+	margin: 0 calc(-1 * var(--ifm-pre-padding));
+	padding: 0 var(--ifm-pre-padding);
+}
+
+.gradient-btn {
+	border: none;
+	margin-right: 20px;
+	margin-top: 10px;
+	font-weight: 500;
+	color: #fff;
+	font-size: 20px;
+	background-size: 200% auto;
+	border-radius: 15px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.gradient-btn:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	background-position: right center;
+	color: #fff;
+	border-radius: 25px;
+}
+
+.gradient-btn-svg {
+	width: 25px;
+	height: 25px;
+	vertical-align: -5px;
+	margin-right: 10px;
+	color: white;
+}
+
+.discord-btn {
+	background-image: linear-gradient(to right, #7289da 0%, #0037ff 100%);
+}
+
+.github-btn {
+	background-image: linear-gradient(to right, #494949 0%, #000000 100%);
+}
+
+/* Setting default CSS for Discord messages */
+.discord-message,
+.discord-messages {
+	font-family: Whitney, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.discord-message {
+	margin: 0 !important;
+	margin-top: 5px !important;
+}
+
+.discord-messages {
+	padding: 0 !important;
+	padding-bottom: 5px !important;
+}
+
+.discord-bot-tag {
+	color: #fff;
+	font-weight: 500;
+}
+
+.discord-codeblock {
+	background: #2f3136;
+	border: 1px solid #202225;
+	display: block;
+	margin-top: 5px;
+	border-radius: 4px;
+	color: #b9bbbe;
+	font-family: Consolas, Andale Mono WT, Andale Mono, Lucida Console,
+		Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono,
+		Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace;
+}
+
+.discord-author-username {
+	font-size: 1rem !important;
+}
+
+.discord-author-username:hover {
+	text-decoration: underline;
+}
+
+.discord-author-avatar img,
+.discord-author-username {
+	cursor: pointer;
+}
+
+.discord-author-avatar img:hover {
+	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.16));
+}
+
+.discord-message-timestamp {
+	margin-left: 6px !important;
+	cursor: default;
+}
+
+.discord-embed {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.discord-embed-footer {
+	color: #dcddde;
+}
+
+.discord-embed-footer,
+.discord-footer-image {
+	margin-top: 5px !important;
+}
+
+.discord-embed-media {
+	margin: 0 !important;
+}
+
+.discord-embed-grid {
+	padding: 0.5rem 1rem 0.75rem 0.75rem !important;
+}
+
+.discord-author-avatar {
+	margin-right: 12px !important;
+	transform: translateY(5px) !important;
+}
+
+.discord-action-row {
+	transform: translateY(-5px);
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+}
+
+.captcha-frame {
+	width: 350px;
+	height: 300px;
+}

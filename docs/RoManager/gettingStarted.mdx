@@ -1,0 +1,92 @@
+---
+id: gettingStarted
+title: Getting Started
+sidebar_label: Getting Started
+slug: /getting-started
+---
+
+Getting started with RoManager
+
+import {
+	DiscordMessages,
+	DiscordMessage,
+	DiscordMention,
+	DiscordEmbed,
+	DiscordEmbedField,
+	DiscordEmbedFields,
+	DiscordButton,
+	DiscordActionRow,
+} from "@skyra/discord-components-react";
+
+## Adding the bot
+
+To get started with RoManager, you first need to add the bot to a Discord server.
+
+[Add to Discord](https://discord.com/api/oauth2/authorize?client_id=738035113815834746&permissions=8&scope=bot)
+
+## Linking a Roblox group
+
+Run the `.setup` command with your group's name, id, or url.
+
+<DiscordMessages>
+	<DiscordMessage>.setup your-group-name-or-id</DiscordMessage>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/9c943bdaadc550fc4d7af38c6d2bc8ba.png"
+	>
+		<DiscordEmbed
+			embedTitle="Setup"
+			slot="embeds"
+			color="#5865F2"
+			thumbnail="https://i.jaydensar.net/rmt-min.png"
+		>
+			<DiscordEmbedFields slot="fields">
+				<DiscordEmbedField fieldTitle="Id" inline inline-index={1}>
+					12345678
+				</DiscordEmbedField>
+				<DiscordEmbedField fieldTitle="Owner" inline inline-index={2}>
+					You
+				</DiscordEmbedField>
+			</DiscordEmbedFields>
+		</DiscordEmbed>
+		<DiscordActionRow slot="components">
+			<DiscordButton type="primary">Confirm</DiscordButton>
+			<DiscordButton type="secondary">Cancel</DiscordButton>
+		</DiscordActionRow>
+	</DiscordMessage>
+</DiscordMessages>
+<br />
+
+:::info
+Anyone with **Manage Server** permissions can run the `.setup` command, however only the group owner can link their group.
+:::
+
+## Giving the bot group permissions
+
+To start, go to your group, and open the `Configure Group` page.
+
+![](https://i.jaydensar.net/2021/02/0zOidVmgEFv.png)
+
+Next, open the `Members` tab.
+
+![](https://i.jaydensar.net/2021/02/mThre5mMAGE.png)
+
+Then, give the bot a role that has permissions already, or grant it permissions, as shown below.
+
+:::info
+We recommend giving the bot its own, standalone role.
+:::
+
+### Granting permissions to the bot's role
+
+If the role you granted doesn't already have perms;
+
+Open the `Roles` tab, click on the role you assigned the bot, and give it the necessary permissions, as shown in the embed after you ran the `setup` command.
+
+![](https://i.jaydensar.net/2021/02/pH2peApvgJp.png)
+
+Then click the **Save** button when done.
+
+**You have now successfully set up RoManager! 🎉**

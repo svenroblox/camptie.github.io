@@ -1,0 +1,50 @@
+---
+id: gettingStarted
+title: Getting Started
+sidebar_label: Getting Started
+slug: /api/getting-started
+---
+
+RoManager provides a REST API that allow you to perform Roblox site actions via RoManager.
+
+import {
+	DiscordMessages,
+	DiscordMessage,
+	DiscordMention,
+} from "@skyra/discord-components-react";
+
+Base URL: `https://api.romanager.bot/v1`
+
+## Generating an API key
+
+To generate an API key, run the `.api-key generate` command. You must be the group owner to run this command. A DM will be sent to you with the API key.
+
+<DiscordMessages>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/9c943bdaadc550fc4d7af38c6d2bc8ba.png"
+	>
+		API key successfully generated:
+		<br />
+		<code class="discord-codeblock">7885a186-86c6-48c9-8f89-82ad646e8e98</code>
+	</DiscordMessage>
+</DiscordMessages>
+
+## Using the API
+
+All API methods are below, in the other categories. The API expects JSON data in the request body.
+
+### Ratelimit
+
+The ratelimit is 60 requests per 60 seconds. For example, you can send 60 requests in 5 seconds, however you will not be able to send any more requests for 55 seconds.
+
+The following headers will be set so you know when you should retry your request:
+
+| Header                  | Description                                                                                 |
+| :---------------------- | :------------------------------------------------------------------------------------------ |
+| `Retry-After`           | time (in seconds) to wait until the next request can be sent, only present when ratelimited |
+| `X-RateLimit-Limit`     | request limit per minute                                                                    |
+| `X-RateLimit-Remaining` | number of requests left for the time window                                                 |
+| `X-RateLimit-Reset`     | amount of miliseconds before the requests left in the time window resets                    |

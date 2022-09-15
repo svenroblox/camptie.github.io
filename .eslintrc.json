@@ -1,0 +1,41 @@
+{
+	"plugins": ["prettier"],
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2021,
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:import/errors",
+		"plugin:import/warnings",
+		"plugin:react/recommended",
+		"plugin:promise/recommended",
+		"plugin:prettier/recommended"
+	],
+	"rules": {
+		"handle-callback-err": "off",
+		"import/no-unresolved": "off",
+		"max-nested-callbacks": ["error", { "max": 4 }],
+		"max-statements-per-line": ["error", { "max": 2 }],
+		"no-console": "off",
+		"no-empty-function": "error",
+		"no-lonely-if": "error",
+		"no-var": "error",
+		"prefer-const": "error",
+		"prettier/prettier": "warn",
+		"spaced-comment": "error",
+		"yoda": "error"
+	}
+}
