@@ -5,7 +5,7 @@ module.exports = {
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "throw",
-	favicon: "",
+	favicon: "https://i.imgur.com/Bs0XtAM.png",
 	organizationName: "svenroblox", // Usually your GitHub org/user name.
 	projectName: "camptie.github.io", // Usually your repo name.
 	trailingSlash: false,
