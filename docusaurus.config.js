@@ -1,13 +1,13 @@
 module.exports = {
-	title: "RoManager",
+	title: "Camptie",
 	tagline: "A free, feature-rich Discord-to-Roblox bot.",
-	url: "https://romanager.bot",
+	url: "https://camptie-github-io.vercel.app/",
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "throw",
-	favicon: "https://i.jaydensar.net/rmt-min.png",
-	organizationName: "RoManager-org", // Usually your GitHub org/user name.
-	projectName: "website", // Usually your repo name.
+	favicon: "",
+	organizationName: "svenroblox", // Usually your GitHub org/user name.
+	projectName: "camptie.github.io", // Usually your repo name.
 	trailingSlash: false,
 	themeConfig: {
 		prism: {
@@ -21,9 +21,9 @@ module.exports = {
 		},
 		navbar: {
 			hideOnScroll: true,
-			title: "RoManager",
+			title: "Camptie",
 			logo: {
-				src: "https://i.jaydensar.net/rmt-min.png",
+				src: "",
 			},
 			items: [
 				/* {
@@ -39,14 +39,14 @@ module.exports = {
 					position: "right",
 				},
 				{
-					to: "https://romanager.bot/discord",
+					to: "https://discord.gg/UsvKGaxEuu",
 					label: "Discord Server",
 					position: "right",
 				},
 			],
 		},
 		footer: {
-			copyright: `Copyright © ${new Date().getFullYear()} RoManager`,
+			copyright: `Copyright © ${new Date().getFullYear()} Camptie`,
 		},
 	},
 	themes: [
@@ -68,7 +68,7 @@ module.exports = {
 			{
 				sidebarPath: require.resolve("./sidebars.js"),
 				// Please change this to your repo.
-				editUrl: "https://github.com/RoManager-org/website/edit/main/",
+				editUrl: "github.com/svenroblox/camptie.github.io/edit/main/",
 			},
 		],
 		[
@@ -81,7 +81,7 @@ module.exports = {
 	],
 	scripts: [
 		{
-			src: "https://science.jaydensar.net/science.js",
+			src: "",
 			async: true,
 			defer: true,
 			"data-website-id": "3d11690f-43db-47de-a895-d81345623235",
