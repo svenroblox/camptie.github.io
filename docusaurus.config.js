@@ -5,7 +5,7 @@ module.exports = {
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "throw",
-	favicon: "https://media.discordapp.net/attachments/1019545250823409744/1020592732101689404/camptielogo.png",
+	favicon: "https://media.discordapp.net/attachments/1019545250823409745/1020594963920211999/removal.ai_tmp-632574f8589de.pngv",
 	organizationName: "svenroblox", // Usually your GitHub org/user name.
 	projectName: "camptie.github.io", // Usually your repo name.
 	trailingSlash: false,
@@ -15,7 +15,7 @@ module.exports = {
 			additionalLanguages: ["lua"],
 		},
 		colorMode: {
-			defaultMode: "dark",
+			defaultMode: "light",
 			respectPrefersColorScheme: false,
 			disableSwitch: true,
 		},
@@ -23,7 +23,7 @@ module.exports = {
 			hideOnScroll: true,
 			title: "Camptie",
 			logo: {
-				src: "https://media.discordapp.net/attachments/1019545250823409744/1020592732101689404/camptielogo.png",
+				src: "https://media.discordapp.net/attachments/1019545250823409745/1020594963920211999/removal.ai_tmp-632574f8589de.png",
 			},
 			items: [
 				/* {
