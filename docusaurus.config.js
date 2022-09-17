@@ -5,7 +5,7 @@ module.exports = {
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "throw",
-	favicon: "https://i.imgur.com/Bs0XtAM.png",
+	favicon: "https://media.discordapp.net/attachments/1019545250823409744/1020592732101689404/camptielogo.png",
 	organizationName: "svenroblox", // Usually your GitHub org/user name.
 	projectName: "camptie.github.io", // Usually your repo name.
 	trailingSlash: false,
@@ -23,7 +23,7 @@ module.exports = {
 			hideOnScroll: true,
 			title: "Camptie",
 			logo: {
-				src: "",
+				src: "https://media.discordapp.net/attachments/1019545250823409744/1020592732101689404/camptielogo.png",
 			},
 			items: [
 				/* {
@@ -80,11 +80,6 @@ module.exports = {
 		],
 	],
 	scripts: [
-		{
-			src: "",
-			async: true,
-			defer: true,
-			"data-website-id": "3d11690f-43db-47de-a895-d81345623235",
-		},
+
 	],
 };
