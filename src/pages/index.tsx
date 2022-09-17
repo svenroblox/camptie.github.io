@@ -19,7 +19,7 @@ const features = [
 		title: "Automation",
 		description: (
 			<>
-				RoManager extends Roblox&apos;s own features with automation.
+				camptie extends Roblox&apos;s own features with automation.
 				Automatically exile members, effectively banning them, or lock their
 				rank, preventing it from being changed.
 			</>
@@ -29,11 +29,7 @@ const features = [
 		title: "Free, forever",
 		description: (
 			<>
-				RoManager will remain free, forever. Both free as in free-to-use, and{" "}
-				<Link to="https://github.com/RoManager-org/romanager-oss">
-					free as in open-source
-				</Link>
-				, allowing you to host your own version.
+				We will remain free, forever.
 			</>
 		),
 	},
@@ -65,7 +61,7 @@ const Home = () => {
 						<Link
 							className={"discord-btn gradient-btn button"}
 							to={
-								"https://discord.com/api/oauth2/authorize?client_id=738035113815834746&permissions=8&scope=bot"
+								""
 							}
 						>
 							<img
@@ -77,7 +73,7 @@ const Home = () => {
 						</Link>
 						<Link
 							className={"github-btn gradient-btn button"}
-							to={"https://github.com/RoManager-org"}
+							to={""}
 						>
 							<img
 								src={"img/logo-github.svg"}
