@@ -15,7 +15,7 @@ module.exports = {
 			additionalLanguages: ["lua"],
 		},
 		colorMode: {
-			defaultMode: "light",
+			defaultMode: "dark",
 			respectPrefersColorScheme: false,
 			disableSwitch: true,
 		},
