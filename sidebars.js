@@ -1,6 +1,6 @@
 module.exports = {
 	sidebar: {
-		RoManager: ["RoManager/introduction", "RoManager/gettingStarted"],
+		Camptie: ["camptie/introduction"],
 		Guides: ["Guides/permissionOverrides", "Guides/customBotAccount"],
 		API: ["API/gettingStarted", "API/group"],
 	},
